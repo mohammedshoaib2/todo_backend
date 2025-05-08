@@ -1,6 +1,7 @@
 import express, { urlencoded } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import { environmentVariables } from "./constants.js";
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "*",
+    origin: environmentVariables.corsOrigin,
     credentials: true,
   })
 );
