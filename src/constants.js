@@ -1,6 +1,7 @@
 const environmentVariables = {
   mongodbUri: process.env.MONGODB_URI,
   corsOrigin: process.env.CORS_ORIGIN,
+  PORT: process.env.PORT,
 };
 
 const STATUS_CODES = {
